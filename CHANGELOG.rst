@@ -2,6 +2,87 @@
 CHANGELOG
 =========
 
+1.29.53
+=======
+
+* api-change:``braket``: This release adds support to view the device queue depth (the number of queued quantum tasks and hybrid jobs on a device) and queue position for a quantum task and hybrid job.
+* api-change:``dms``: new vendors for DMS CSF: MongoDB, MariaDB, DocumentDb and Redshift
+* api-change:``ec2``: EC2 M2 Pro Mac instances are powered by Apple M2 Pro Mac Mini computers featuring 12 core CPU, 19 core GPU, 32 GiB of memory, and 16 core Apple Neural Engine and uniquely enabled by the AWS Nitro System through high-speed Thunderbolt connections.
+* api-change:``efs``: Update efs command to latest version
+* api-change:``guardduty``: Add `EKS_CLUSTER_NAME` to filter and sort key.
+* api-change:``mediaconvert``: This release supports the creation of of audio-only tracks in CMAF output groups.
+
+
+1.29.52
+=======
+
+* api-change:``appconfig``: Enabling boto3 paginators for list APIs and adding documentation around ServiceQuotaExceededException errors
+* api-change:``apprunner``: This release adds improvements for managing App Runner auto scaling configuration resources. New APIs: UpdateDefaultAutoScalingConfiguration and ListServicesForAutoScalingConfiguration. Updated API: DeleteAutoScalingConfiguration.
+* api-change:``codeartifact``: Add support for the Swift package format.
+* api-change:``kinesisvideo``: Updated DescribeMediaStorageConfiguration, StartEdgeConfigurationUpdate, ImageGenerationConfiguration$SamplingInterval, and UpdateMediaStorageConfiguration to match AWS Docs.
+* api-change:``logs``: Add ClientToken to QueryDefinition CFN Handler in CWL
+* api-change:``s3``: Fix an issue where the SDK can fail to unmarshall response due to NumberFormatException
+* api-change:``servicediscovery``: Adds a new DiscoverInstancesRevision API and also adds InstanceRevision field to the DiscoverInstances API response.
+* api-change:``sso-oidc``: Update FIPS endpoints in aws-us-gov.
+* enhancement:``codeartifact login``: Add Swift support for CodeArtifact login command
+
+
+1.29.51
+=======
+
+* api-change:``ec2``: This release adds support for C7i, and R7a instance types.
+* api-change:``outposts``: This release adds the InstanceFamilies field to the ListAssets response.
+* api-change:``sagemaker``: This release adds support for one-time model monitoring schedules that are executed immediately without delay, explicit data analysis windows for model monitoring schedules and exclude features attributes to remove features from model monitor analysis.
+
+
+1.29.50
+=======
+
+* api-change:``discovery``: Add sensitive protection for customer information
+* api-change:``macie2``: This release changes the default managedDataIdentifierSelector setting for new classification jobs to RECOMMENDED. By default, new classification jobs now use the recommended set of managed data identifiers.
+* api-change:``workmail``: This release includes four new APIs UpdateUser, UpdateGroup, ListGroupsForEntity and DescribeEntity, along with RemoteUsers and some enhancements to existing APIs.
+
+
+1.29.49
+=======
+
+* api-change:``appstream``: This release introduces app block builder, allowing customers to provision a resource to package applications into an app block
+* api-change:``connect``: New rule type (OnMetricDataUpdate) has been added
+* api-change:``datasync``: Documentation-only updates for AWS DataSync.
+* api-change:``sagemaker``: This release introduces Skip Model Validation for Model Packages
+
+
+1.29.48
+=======
+
+* enhancement:``codeartifact login``: Include stderr output from underlying login tool when subprocess fails
+* api-change:``appstream``: This release introduces multi-session fleets, allowing customers to provision more than one user session on a single fleet instance.
+* api-change:``cloudformation``: Documentation updates for AWS CloudFormation
+* api-change:``entityresolution``: Changed "ResolutionTechniques" and "MappedInputFields" in workflow and schema mapping operations to be required fields.
+* api-change:``lookoutequipment``: This release adds APIs for the new scheduled retraining feature.
+
+
+1.29.47
+=======
+
+* api-change:``cloud9``: Update to include information on Ubuntu 18 deprecation.
+* api-change:``drs``: Updated existing APIs and added new ones to support using AWS Elastic Disaster Recovery post-launch actions. Added support for new regions.
+* api-change:``firehose``: DocumentIdOptions has been added for the Amazon OpenSearch destination.
+* api-change:``guardduty``: Add `managementType` field to ListCoverage API response.
+* api-change:``internetmonitor``: This release updates the Amazon CloudWatch Internet Monitor API domain name.
+* api-change:``ivs-realtime``: Doc only update that changes description for ParticipantToken.
+* api-change:``simspaceweaver``: Edited the introductory text for the API reference.
+* api-change:``xray``: Add StartTime field in GetTraceSummaries API response for each TraceSummary.
+
+
+1.29.46
+=======
+
+* api-change:``ec2``: This release adds support for restricting public sharing of AMIs through AMI Block Public Access
+* api-change:``events``: Update events command to latest version
+* api-change:``kendra``: Amazon Kendra now supports confidence score buckets for retrieved passage results using the Retrieve API.
+
+
 1.29.45
 =======
 
