@@ -2,6 +2,54 @@
 CHANGELOG
 =========
 
+1.29.57
+=======
+
+* api-change:``bedrock``: Model Invocation logging added to enable or disable logs in customer account. Model listing and description support added. Provisioned Throughput feature added. Custom model support added for creating custom models. Also includes list, and delete functions for custom model.
+* api-change:``bedrock-runtime``: Run Inference: Added support to run the inference on models.  Includes set of APIs for running inference in streaming and non-streaming mode.
+* api-change:``budgets``: Update DescribeBudgets and DescribeBudgetNotificationsForAccount MaxResults limit to 1000.
+* api-change:``ec2``: Adds support for Customer Managed Key encryption for Amazon Verified Access resources
+* api-change:``iotfleetwise``: AWS IoT FleetWise now supports encryption through a customer managed AWS KMS key. The PutEncryptionConfiguration and GetEncryptionConfiguration APIs were added.
+* api-change:``sagemaker``: Online store feature groups supports Standard and InMemory tier storage types for low latency storage for real-time data retrieval. The InMemory tier supports collection types List, Set, and Vector.
+* api-change:``sagemaker-featurestore-runtime``: Feature Store supports read/write of records with collection type features.
+* api-change:``wafv2``: Correct and improve the documentation for the FieldToMatch option JA3 fingerprint.
+
+
+1.29.56
+=======
+
+* api-change:``cognito-idp``: The UserPoolType Status field is no longer used.
+* api-change:``firehose``: Features : Adding support for new data ingestion source to Kinesis Firehose - AWS Managed Services Kafka.
+* api-change:``iot``: Added support for IoT Rules Engine Kafka Action Headers
+* api-change:``textract``: This release adds new feature - Layout to Analyze Document API which can automatically extract layout elements such as titles, paragraphs, headers, section headers, lists, page numbers, footers, table areas, key-value areas and figure areas and order the elements as a human would read.
+
+
+1.29.55
+=======
+
+* api-change:``appintegrations``: The Amazon AppIntegrations service adds a set of APIs (in preview) to manage third party applications to be used in Amazon Connect agent workspace.
+* api-change:``apprunner``: This release allows an App Runner customer to specify a custom source directory to run the build & start command. This change allows App Runner to support monorepo based repositories
+* api-change:``codedeploy``: CodeDeploy now supports In-place and Blue/Green EC2 deployments with multiple Classic Load Balancers and multiple Target Groups.
+* api-change:``connect``: This release updates a set of Amazon Connect APIs that provides the ability to integrate third party applications in the Amazon Connect agent workspace.
+* api-change:``dynamodb``: Amazon DynamoDB now supports Incremental Export as an enhancement to the existing Export Table
+* api-change:``ec2``: The release includes AWS verified access to support FIPs compliance in North America regions
+* api-change:``lakeformation``: This release adds three new API support "CreateLakeFormationOptIn", "DeleteLakeFormationOptIn" and "ListLakeFormationOptIns", and also updates the corresponding documentation.
+* api-change:``pinpoint``: Update documentation for RemoveAttributes to more accurately reflect its behavior when attributes are deleted.
+* api-change:``s3``: This release adds a new field COMPLETED to the ReplicationStatus Enum. You can now use this field to validate the replication status of S3 objects using the AWS SDK.
+
+
+1.29.54
+=======
+
+* api-change:``amplifyuibuilder``: Support for generating code that is compatible with future versions of amplify project dependencies.
+* api-change:``chime-sdk-media-pipelines``: Adds support for sending WebRTC audio to Amazon Kineses Video Streams.
+* api-change:``emr-serverless``: This release adds support for application-wide default job configurations.
+* api-change:``finspace-data``: Adding sensitive trait to attributes. Change max SessionDuration from 720 to 60. Correct "ApiAccess" attribute to "apiAccess" to maintain consistency between APIs.
+* api-change:``quicksight``: Added ability to tag users upon creation.
+* api-change:``ssm``: This release updates the enum values for ResourceType in SSM DescribeInstanceInformation input and ConnectionStatus in GetConnectionStatus output.
+* api-change:``wafv2``: You can now perform an exact match against the web request's JA3 fingerprint.
+
+
 1.29.53
 =======
 
